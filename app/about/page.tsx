@@ -134,11 +134,6 @@ export default function AboutPage() {
 
           <div className="about-avatar-column">
             <div className="about-avatar-stage">
-              {/* Dynamic Speech Bubble */}
-              <div className="about-speech-bubble" aria-label="Status: Available for product roles">
-                <span className="about-speech-dot" aria-hidden="true" />
-                <span>It&apos;s me! 👋 UI/UX &amp; Systems Designer</span>
-              </div>
 
               {/* Animated Avatar Card */}
               <div className="about-avatar-card">
