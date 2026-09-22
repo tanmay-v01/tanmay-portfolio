@@ -72,58 +72,6 @@ const GALLERY_ITEMS: GalleryItem[] = [
     accentColor: '#34d399',
     badgeTone: 'emerald',
     tags: ['Sports Ops', 'Player Analytics', 'Live Brackets', 'Emerald Studio']
-  },
-  {
-    id: 'avaada-smart-gate',
-    title: 'Avaada Smart Gate & Permit-to-Work Telemetry',
-    category: 'Mobile UX',
-    client: 'Avaada Clean Energy',
-    year: '2025',
-    desc: 'Contractor safety protocol telemetry and real-time field gate authorization on iPad Pro paired with field inspector mobile smart pass.',
-    image: '/images/gallery/avaada_smart_gate_telemetry_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #08284d 0%, #031427 100%)',
-    accentColor: '#38bdf8',
-    badgeTone: 'blue',
-    tags: ['Field Operative UX', 'Gate IoT', 'Renewable Safety', 'Mobile Security']
-  },
-  {
-    id: 'pastel-vip-discovery',
-    title: 'Pastel VIP Fragrance Discovery & Inventory Stream',
-    category: 'Mobile UX',
-    client: 'Pastel Parfumerie (Dubai)',
-    year: '2025',
-    desc: 'Boutique fragrance notes discovery carousel on mobile paired with real-time artisan batch formulation inventory tracker on iPad Pro.',
-    image: '/images/gallery/pastel_vip_discovery_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #5c2805 0%, #291002 100%)',
-    accentColor: '#fbbf24',
-    badgeTone: 'amber',
-    tags: ['Fragrance Discovery', 'Artisan Inventory', 'Luxury UX', 'VIP Concierge']
-  },
-  {
-    id: 'qlytic-automation-pipeline',
-    title: 'Qlytic Automated Test Pipeline & Playwright MCP',
-    category: 'Design Systems',
-    client: 'Qlytic Labs',
-    year: '2026',
-    desc: 'Autonomous Playwright MCP testing pipeline dashboard and defect triage matrix on iPad Pro with mobile incident alert stream.',
-    image: '/images/gallery/qlytic_automation_pipeline_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #2e1065 0%, #170738 100%)',
-    accentColor: '#a855f7',
-    badgeTone: 'purple',
-    tags: ['Playwright MCP', 'Autonomous Testing', 'Quality Engineering', 'Dark Studio']
-  },
-  {
-    id: 'yo-sports-court-analytics',
-    title: 'Yo! Sports Live Brackets & Player Court Heatmap',
-    category: 'Design Systems',
-    client: 'Yo! Sports Media',
-    year: '2025',
-    desc: 'Interactive tournament draw bracket matrix and high-velocity player court heatmaps on tablet paired with real-time match referee mobile companion.',
-    image: '/images/gallery/yo_sports_court_analytics_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #065f46 0%, #022c22 100%)',
-    accentColor: '#34d399',
-    badgeTone: 'emerald',
-    tags: ['Court Heatmap', 'Live Brackets', 'Sports Analytics', 'Match Engine']
   }
 ];
 
