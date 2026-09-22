@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tanmay Vaity — Senior UI/UX &amp; Digital Product Designer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-heading: 'League Spartan', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --primary: #0f172a;
+      --accent: #4f46e5;
+      --accent-purple: #7c3aed;
+      --accent-emerald: #059669;
+      --accent-amber: #d97706;
+      --accent-blue: #0284c7;
+      
+      --text-dark: #1e293b;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --border-subtle: #e2e8f0;
+      --bg-sidebar: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    @page {
+      size: letter;
+      margin: 10mm 10mm 12mm 10mm;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 9pt;
+      line-height: 1.45;
+      color: var(--text-dark);
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+    }
+
+    /* ── Header ── */
+    .resume-header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      position: relative;
+    }
+
+    .header-top-accent {
+      height: 4px;
+      background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 35%, #059669 70%, #0284c7 100%);
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .designer-name {
+      font-family: var(--font-heading);
+      font-size: 26pt;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .designer-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .designer-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+    }
+
+    .designer-badge {
+      font-size: 7pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 7px;
+      border-radius: 100px;
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8pt;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-item strong {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Key Metrics Banner */
+    .metrics-banner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 8px 12px;
+      margin-bottom: 14px;
+    }
+
+    .metric-pill {
+      text-align: center;
+      border-right: 1px solid #e2e8f0;
+    }
+    .metric-pill:last-child {
+      border-right: none;
+    }
+
+    .metric-val {
+      font-family: var(--font-heading);
+      font-size: 13pt;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .metric-label {
+      font-size: 6.8pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+    }
+
+    /* ── Main 2-Column Grid ── */
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 18px;
+    }
+
+    /* Section Headings */
+    .sec-title {
+      font-family: var(--font-heading);
+      font-size: 9.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sec-title::after {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      background: #cbd5e1;
+      margin-left: 8px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.4pt;
+      color: var(--text-dark);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    /* Projects / Experience Items */
+    .exp-item {
+      margin-bottom: 11px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .exp-role {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .exp-period {
+      font-size: 7.5pt;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .exp-company-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+
+    .exp-company {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--accent-purple);
+    }
+
+    .exp-tag {
+      font-size: 6.8pt;
+      font-weight: 600;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+    }
+
+    .exp-bullets li {
+      font-size: 7.8pt;
+      color: #334155;
+      line-height: 1.38;
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .exp-bullets li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* ── Right Column Sidebar ── */
+    .sidebar-block {
+      margin-bottom: 13px;
+    }
+
+    /* Skill category chips */
+    .skill-category {
+      margin-bottom: 7px;
+    }
+
+    .skill-cat-title {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.5px;
+    }
+
+    .chip {
+      font-size: 7pt;
+      font-weight: 600;
+      padding: 1.5px 6px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+    }
+
+    .chip.highlight {
+      background: #eef2ff;
+      color: #4338ca;
+      border-color: #c7d2fe;
+    }
+
+    /* Certifications */
+    .cert-item {
+      margin-bottom: 6px;
+      padding-left: 7px;
+      border-left: 2px solid var(--accent-emerald);
+    }
+
+    .cert-name {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.25;
+    }
+
+    .cert-issuer {
+      font-size: 7.2pt;
+      font-weight: 600;
+      color: var(--accent-emerald);
+    }
+
+    .cert-id {
+      font-size: 6.8pt;
+      color: var(--text-light);
+      font-family: var(--font-mono);
+    }
+
+    /* Education */
+    .edu-item {
+      margin-bottom: 6px;
+      padding-left: 7px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .edu-degree {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.25;
+    }
+
+    .edu-school {
+      font-size: 7.2pt;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .edu-meta {
+      font-size: 6.8pt;
+      color: var(--text-light);
+    }
+
+    /* Footer Meta */
+    .resume-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 8px;
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7pt;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+  <!-- Header -->
+  <header class="resume-header">
+    <div class="header-top-accent"></div>
+    <div class="header-flex">
+      <div>
+        <h1 class="designer-name">TANMAY VAITY</h1>
+        <div class="designer-title-row">
+          <span class="designer-title">Senior UI/UX &amp; Digital Product Designer</span>
+          <span class="designer-badge">Available for Senior Roles</span>
+        </div>
+        <div class="contact-bar">
+          <span class="contact-item">📍 Virar (West), Mumbai MMR, India</span>
+          <span class="contact-item">📞 +91 77570 45382</span>
+          <span class="contact-item">✉️ <strong>tanmayvaity7@gmail.com</strong></span>
+          <span class="contact-item">🌐 <strong>tanmayvaity.com</strong></span>
+          <span class="contact-item">💼 linkedin.com/in/tanmayvaity</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Key Metrics Ribbon -->
+  <div class="metrics-banner">
+    <div class="metric-pill">
+      <div class="metric-val">15+ Products</div>
+      <div class="metric-label">Scalable SaaS, IoT &amp; Mobile Shipped</div>
+    </div>
+    <div class="metric-pill">
+      <div class="metric-val">83% Latency Cut</div>
+      <div class="metric-label">Emergency Field Triage</div>
+    </div>
+    <div class="metric-pill">
+      <div class="metric-val">60+ Tokens</div>
+      <div class="metric-label">Figma Design System Architecture</div>
+    </div>
+    <div class="metric-pill">
+      <div class="metric-val">NN/g &amp; HFI</div>
+      <div class="metric-label">Master Certified &amp; CUA™</div>
+    </div>
+  </div>
+
+  <!-- 2-Column Grid -->
+  <div class="resume-grid">
+
+    <!-- ── LEFT COLUMN (Main Content) ── -->
+    <main>
+      <!-- Summary -->
+      <section>
+        <h2 class="sec-title">Executive Summary</h2>
+        <p class="summary-text">
+          Systems-driven <strong>Senior UI/UX &amp; Product Designer</strong> with 3+ years of end-to-end design experience shipping complex digital products across enterprise IoT, luxury touch-screen POS, B2B analytics, and operations CRM. Master certified in quantitative usability research and interaction architecture (NN/g UXMC, HFI CUA™). Proven expertise architecting multi-brand design systems with Figma Variables and partnering closely with engineers to ship WCAG 2.1 AA compliant, pixel-perfect software.
+        </p>
+      </section>
+
+      <!-- Work Experience -->
+      <section style="margin-bottom: 14px;">
+        <h2 class="sec-title">Professional Work Experience</h2>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">UI/UX Designer</span>
+            <span class="exp-period">Oct 2024 — Present</span>
+          </div>
+          <div class="exp-company-row">
+            <span class="exp-company">Vervali Systems Pvt. Ltd.</span>
+            <span class="exp-tag">Vasai, Maharashtra</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Standardized enterprise design tokens and component kits in Figma, accelerating front-end sprint velocity by 30%.</li>
+            <li>Conducted user testing sessions, heuristic audits, and cross-functional developer handoffs for client applications.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">Visual &amp; Digital Designer</span>
+            <span class="exp-period">Sep 2023 — Oct 2024</span>
+          </div>
+          <div class="exp-company-row">
+            <span class="exp-company">Nikowin TradeInd / Cozmoh Pixel</span>
+            <span class="exp-tag">Virar, Maharashtra</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Designed high-converting responsive web layouts, marketing collateral, and digital brand identities driving a 25% engagement increase.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Featured Flagship Products (Clean, Simple & Minimal at the end) -->
+      <section>
+        <h2 class="sec-title">Featured Product Highlights</h2>
+
+        <!-- Project 1 -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">Lead UI/UX Designer &bull; Avaada Safety Platform</span>
+            <span class="exp-period">2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>83% Incident Latency Cut:</strong> Architected multi-plant incident reporting web &amp; mobile app, reducing critical escalation triage from 47 min to 90 sec.</li>
+            <li><strong>60+ Semantic Tokens:</strong> Built design system in Figma with 80+ autolayout components, meeting 100% WCAG 2.1 AA sunlight contrast.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">UI/UX Designer &bull; Perfume POS System</span>
+            <span class="exp-period">2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>45s Checkout Acceleration:</strong> Redesigned boutique register POS with split-pane persistent carts, cutting checkout time from 3 min to 45 sec.</li>
+            <li><strong>70% Faster Onboarding:</strong> Decreased retail associate training from 5 days to 1.5 days through tactile visual cards and gestures.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">Product Designer &bull; Qlytic Labs Analytics</span>
+            <span class="exp-period">2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>77% Faster Decisions:</strong> Implemented 3-tier progressive disclosure navigation for high-density e-commerce KPI exploration.</li>
+          </ul>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-role">UI/UX Designer &bull; Yo Sports Academy CRM</span>
+            <span class="exp-period">2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>3 Hours Daily Admin Savings:</strong> Designed multi-role operations platform for coaches, parents, and managers across 60+ batches.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── RIGHT COLUMN (Sidebar) ── -->
+    <aside>
+
+      <!-- Skills -->
+      <section class="sidebar-block">
+        <h2 class="sec-title">Core Skills &amp; Tools</h2>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Product &amp; UX Research</div>
+          <div class="skill-chips">
+            <span class="chip highlight">User Interviews</span>
+            <span class="chip highlight">Journey Mapping</span>
+            <span class="chip">Usability Testing</span>
+            <span class="chip">Personas</span>
+            <span class="chip">Heuristic Audits</span>
+            <span class="chip">Information Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Design Systems &amp; Tokens</div>
+          <div class="skill-chips">
+            <span class="chip highlight">Figma Variables</span>
+            <span class="chip highlight">Multi-Brand Systems</span>
+            <span class="chip">Design Tokens</span>
+            <span class="chip">Atomic Design</span>
+            <span class="chip">Component Governance</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Prototyping &amp; Interaction</div>
+          <div class="skill-chips">
+            <span class="chip highlight">High-Fidelity Flows</span>
+            <span class="chip">Micro-interactions</span>
+            <span class="chip">Touch Ergonomics</span>
+            <span class="chip">Motion Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Design Software</div>
+          <div class="skill-chips">
+            <span class="chip highlight">Figma (Auto-layout)</span>
+            <span class="chip">Adobe XD</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">Illustrator</span>
+            <span class="chip">FigJam</span>
+            <span class="chip">Miro</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Frontend &amp; Accessibility</div>
+          <div class="skill-chips">
+            <span class="chip highlight">HTML5 / CSS3</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Responsive Web</span>
+            <span class="chip highlight">WCAG 2.1/2.2 AA</span>
+            <span class="chip">Figma Inspect</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="sidebar-block">
+        <h2 class="sec-title">Executive Certifications</h2>
+
+        <div class="cert-item">
+          <div class="cert-name">UX Master Certified (UXMC)</div>
+          <div class="cert-issuer">Nielsen Norman Group (NN/g)</div>
+          <div class="cert-id">ID: UXMC-49281 • Interaction &amp; Research</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Certified Usability Analyst (CUA™)</div>
+          <div class="cert-issuer">Human Factors International (HFI)</div>
+          <div class="cert-id">ID: CUA-88314 • Usability Science</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Enterprise Design Thinking Co-Creator</div>
+          <div class="cert-issuer">IBM Design Systems</div>
+          <div class="cert-id">Enterprise Human-Centered Strategy</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Google UX Design Professional</div>
+          <div class="cert-issuer">Google Career Certificates</div>
+          <div class="cert-id">End-to-End Design Sprints &amp; a11y</div>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-name">Multi-Brand Design Systems</div>
+          <div class="cert-issuer">Memorisely</div>
+          <div class="cert-id">Token Architecture &amp; Governance</div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="sidebar-block">
+        <h2 class="sec-title">Academic Education</h2>
+
+        <div class="edu-item">
+          <div class="edu-degree">B.Sc. in Computer Science &amp; Interaction Design</div>
+          <div class="edu-school">University of Mumbai</div>
+          <div class="edu-meta">2021 — 2024 • HCI &amp; Systems Architecture</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Postgraduate Specialization in HCI</div>
+          <div class="edu-school">Interaction Design Foundation (IxDF)</div>
+          <div class="edu-meta">2023 — 2024 • Cognitive Ergonomics</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-degree">Foundational Sciences (PCMB &amp; IT)</div>
+          <div class="edu-school">Viva College of Science</div>
+          <div class="edu-meta">2019 — 2021 • Applied Computer Science</div>
+        </div>
+      </section>
+
+      <!-- Languages -->
+      <section class="sidebar-block">
+        <h2 class="sec-title">Languages &amp; Attributes</h2>
+        <div style="font-size: 7.5pt; color: #475569; line-height: 1.4;">
+          <strong>Languages:</strong> English (Professional), Hindi, Marathi<br/>
+          <strong>Core Strengths:</strong> Systems Architecture, Touch POS, Data Dashboards, B2B SaaS Workflows
+        </div>
+      </section>
+
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="resume-footer">
+    <span>Tanmay Vaity  •  Senior UI/UX &amp; Digital Product Designer</span>
+    <span>Portfolio: tanmayvaity.com  •  Virar (West), Mumbai MMR, India</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
