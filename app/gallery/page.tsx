@@ -22,58 +22,6 @@ interface GalleryItem {
 
 const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: 'ai-resume-review',
-    title: 'AI Resume Review & Scoring Engine',
-    category: 'Mobile UX',
-    client: 'AI Career Suite',
-    year: '2026',
-    desc: 'Contextual AI evaluation mobile app analyzing resume keyword match scores, formatting heuristics, and real-time gap recommendations. Rendered on custom architectural cobalt ridges and warm fluted columns.',
-    image: '/images/gallery/ai_resume_review_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #0e3b66 0%, #061e38 100%)',
-    accentColor: '#38bdf8',
-    badgeTone: 'blue',
-    tags: ['Mobile UX', 'AI Scoring Engine', '3D Architectural Studio', 'iOS Design']
-  },
-  {
-    id: 'workruit-tablet-saas',
-    title: 'Workruit Applicant Pipeline Dashboard',
-    category: 'Tablet & SaaS',
-    client: 'Workruit Enterprise',
-    year: '2025',
-    desc: 'High-density tablet candidate lifecycle manager with status toggles, candidate sorting matrices, and 1-click cloud sync. Displayed on architectural concrete plinth with studio amethyst lighting.',
-    image: '/images/gallery/workruit_tablet_saas_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #4f279e 0%, #29105c 100%)',
-    accentColor: '#c084fc',
-    badgeTone: 'purple',
-    tags: ['Tablet & SaaS', 'Data Grids', 'iPad Pro Ergonomics', 'Enterprise HR']
-  },
-  {
-    id: 'workruit-mobile-offer',
-    title: 'Workruit Candidate Offer & Interview Vault',
-    category: 'Mobile UX',
-    client: 'Workruit Enterprise',
-    year: '2025',
-    desc: 'Frictionless recruiter-candidate mobile interface for offer letter signatures, one-tap video interview joining, and secure identity documentation uploads on purple structural ribs and volcanic basalt stone.',
-    image: '/images/gallery/workruit_mobile_offer_letter_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #581c87 0%, #27064d 100%)',
-    accentColor: '#e879f9',
-    badgeTone: 'purple',
-    tags: ['Mobile UX', 'Offer Management', 'Document Verification', 'Recruitment']
-  },
-  {
-    id: 'workruit-dual-workspace',
-    title: 'Workruit Dual-Screen Consultancy Suite',
-    category: 'Tablet & SaaS',
-    client: 'Workruit Enterprise',
-    year: '2025',
-    desc: 'Unified multi-device operations experience: real-time meeting schedule manager on iPad paired with instantaneous team alert stream on mobile. Grounded on solid stone with architectural purple fluting.',
-    image: '/images/gallery/workruit_dual_consultancy_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #3b166e 0%, #170530 100%)',
-    accentColor: '#a855f7',
-    badgeTone: 'purple',
-    tags: ['Dual Ecosystem', 'Tablet & Mobile', 'Real-time Triage', 'SaaS Platform']
-  },
-  {
     id: 'avaada-iot-system',
     title: 'Avaada CleanTech IoT & Contractor System',
     category: 'Design Systems',
@@ -124,6 +72,58 @@ const GALLERY_ITEMS: GalleryItem[] = [
     accentColor: '#34d399',
     badgeTone: 'emerald',
     tags: ['Sports Ops', 'Player Analytics', 'Live Brackets', 'Emerald Studio']
+  },
+  {
+    id: 'avaada-smart-gate',
+    title: 'Avaada Smart Gate & Permit-to-Work Telemetry',
+    category: 'Mobile UX',
+    client: 'Avaada Clean Energy',
+    year: '2025',
+    desc: 'Contractor safety protocol telemetry and real-time field gate authorization on iPad Pro paired with field inspector mobile smart pass.',
+    image: '/images/gallery/avaada_smart_gate_telemetry_3d_mockup.png',
+    bgGradient: 'linear-gradient(135deg, #08284d 0%, #031427 100%)',
+    accentColor: '#38bdf8',
+    badgeTone: 'blue',
+    tags: ['Field Operative UX', 'Gate IoT', 'Renewable Safety', 'Mobile Security']
+  },
+  {
+    id: 'pastel-vip-discovery',
+    title: 'Pastel VIP Fragrance Discovery & Inventory Stream',
+    category: 'Mobile UX',
+    client: 'Pastel Parfumerie (Dubai)',
+    year: '2025',
+    desc: 'Boutique fragrance notes discovery carousel on mobile paired with real-time artisan batch formulation inventory tracker on iPad Pro.',
+    image: '/images/gallery/pastel_vip_discovery_3d_mockup.png',
+    bgGradient: 'linear-gradient(135deg, #5c2805 0%, #291002 100%)',
+    accentColor: '#fbbf24',
+    badgeTone: 'amber',
+    tags: ['Fragrance Discovery', 'Artisan Inventory', 'Luxury UX', 'VIP Concierge']
+  },
+  {
+    id: 'qlytic-automation-pipeline',
+    title: 'Qlytic Automated Test Pipeline & Playwright MCP',
+    category: 'Design Systems',
+    client: 'Qlytic Labs',
+    year: '2026',
+    desc: 'Autonomous Playwright MCP testing pipeline dashboard and defect triage matrix on iPad Pro with mobile incident alert stream.',
+    image: '/images/gallery/qlytic_automation_pipeline_3d_mockup.png',
+    bgGradient: 'linear-gradient(135deg, #2e1065 0%, #170738 100%)',
+    accentColor: '#a855f7',
+    badgeTone: 'purple',
+    tags: ['Playwright MCP', 'Autonomous Testing', 'Quality Engineering', 'Dark Studio']
+  },
+  {
+    id: 'yo-sports-court-analytics',
+    title: 'Yo! Sports Live Brackets & Player Court Heatmap',
+    category: 'Design Systems',
+    client: 'Yo! Sports Media',
+    year: '2025',
+    desc: 'Interactive tournament draw bracket matrix and high-velocity player court heatmaps on tablet paired with real-time match referee mobile companion.',
+    image: '/images/gallery/yo_sports_court_analytics_3d_mockup.png',
+    bgGradient: 'linear-gradient(135deg, #065f46 0%, #022c22 100%)',
+    accentColor: '#34d399',
+    badgeTone: 'emerald',
+    tags: ['Court Heatmap', 'Live Brackets', 'Sports Analytics', 'Match Engine']
   }
 ];
 
