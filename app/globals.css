@@ -1849,16 +1849,17 @@ button {
 }
 
 /* ── 2. Information Architecture & User Flow ── */
+/* ── 2. Information Architecture & User Flow ── */
 .flow-steps-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-bottom: 28px;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1080px) {
   .flow-steps-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1872,7 +1873,7 @@ button {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
-  padding: 22px;
+  padding: 18px 16px;
   transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
@@ -1883,44 +1884,47 @@ button {
 
 .flow-step-top {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 12px;
 }
 
 .flow-step-num {
-  font-size: 12px;
-  font-weight: 700;
-  font-family: monospace;
-  padding: 2px 8px;
-  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  font-family: var(--font-heading), monospace;
+  padding: 3px 8px;
+  border-radius: 100px;
   background: rgba(var(--project-accent-rgb, 100, 100, 100), 0.12);
   color: var(--project-accent, var(--color-text));
   flex-shrink: 0;
 }
 
 .flow-step-role {
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-dim);
-  text-align: right;
-  line-height: 1.35;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 3px 8px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .flow-step-action {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--color-text);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.3;
 }
 
 .flow-step-outcome {
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12.5px;
+  line-height: 1.5;
   color: var(--color-muted);
 }
 
@@ -1928,29 +1932,29 @@ button {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 14px;
-  padding: 28px 24px;
+  padding: 24px 20px;
 }
 
 .comparison-title {
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--color-text);
 }
 
 .comparison-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1080px) {
   .comparison-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .comparison-grid {
     grid-template-columns: 1fr;
   }
@@ -1958,31 +1962,48 @@ button {
 
 .comparison-card {
   background: #ffffff;
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .comparison-metric-name {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-dim);
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
   display: block;
-  margin-bottom: 10px;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .comparison-values {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.comparison-before,
+.comparison-after {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
 }
 
 .comp-label {
-  font-size: 10px;
+  font-size: 9.5px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-dim);
+  letter-spacing: 0.05em;
+  color: #94a3b8;
   display: block;
   margin-bottom: 2px;
 }
@@ -1990,20 +2011,25 @@ button {
 .comp-val.strike {
   font-size: 13px;
   font-weight: 600;
-  color: #dc2626;
+  color: #ef4444;
   text-decoration: line-through;
-  opacity: 0.75;
+  text-decoration-color: #ef4444;
+  line-height: 1.35;
 }
 
 .comp-val.highlight {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 700;
-  color: #16a34a;
+  color: #059669;
+  line-height: 1.35;
 }
 
 .comp-arrow {
-  font-size: 14px;
-  color: var(--color-dim);
+  font-size: 15px;
+  color: #cbd5e1;
+  font-weight: 700;
+  align-self: center;
+  flex-shrink: 0;
 }
 
 /* ── 3. Wireframing & Concepts ── */
@@ -2499,26 +2525,22 @@ button {
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: contain;
+  object-position: bottom center;
   display: block;
   filter: contrast(1.01) saturate(1.04);
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: -75px;
 }
 
 .about-avatar-card:hover .about-avatar-video {
-  transform: scale(1.03);
+  transform: scale(1.03) translateY(10px);
 }
 
 .about-avatar-ground-shadow {
-  position: absolute;
-  bottom: 0px;
-  left: 12%;
-  right: 12%;
-  height: 16px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
-  pointer-events: none;
+  display: none;
 }
 
 .about-avatar-actions {
@@ -2526,7 +2548,9 @@ button {
   gap: 12px;
   width: 100%;
   justify-content: center;
-  margin-top: 18px;
+  margin-top: -10px;
+  position: relative;
+  z-index: 5;
 }
 
 .about-avatar-actions .about-resume-btn {
@@ -2572,8 +2596,8 @@ button {
 }
 
 .about-body {
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.7;
   color: var(--color-muted);
 }
 
@@ -2581,7 +2605,7 @@ button {
 .about-body p:last-child { margin-bottom: 0; }
 
 .about-section {
-  padding: 60px 0;
+  padding: 36px 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -2635,6 +2659,11 @@ button {
   line-height: 1.3;
 }
 
+.capability-card:nth-child(1) .capability-title { color: #a78bfa; } /* pastel violet */
+.capability-card:nth-child(2) .capability-title { color: #67c9f0; } /* pastel sky */
+.capability-card:nth-child(3) .capability-title { color: #6ee7b7; } /* pastel mint */
+.capability-card:nth-child(4) .capability-title { color: #f9a8d4; } /* pastel rose */
+
 .capability-desc {
   font-size: 14px;
   line-height: 1.7;
@@ -2660,123 +2689,81 @@ button {
 /* ─── Core Skills & Tools (Soft Ambient Gradients) ─── */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
 }
 
 .skill-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 18px;
+  padding: 12px 16px;
   border-radius: 12px;
-  font-size: 13.5px;
-  font-weight: 500;
-  color: #1e293b;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.25s ease,
-              background 0.25s ease;
-  backdrop-filter: blur(8px);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .skill-label {
-  line-height: 1.4;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #1e293b;
+  line-height: 1.35;
   letter-spacing: -0.01em;
 }
 
 .skill-icon {
-  font-size: 13px;
+  font-size: 11px;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .skill-item:hover {
   transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.06);
 }
 
 .skill-item:hover .skill-icon {
-  transform: scale(1.2) rotate(8deg);
+  transform: scale(1.1);
 }
 
-/* Tone: Purple (Soft Lavender / Iris Mist) */
-.skill-item.tone-purple,
-.skill-item:nth-child(4n+1) {
-  background: linear-gradient(135deg, #ffffff 0%, #faf8ff 55%, #f4effe 100%);
-  border: 1px solid rgba(168, 85, 247, 0.18);
-  box-shadow: 0 2px 10px -2px rgba(168, 85, 247, 0.05);
-}
+/* Tone Variations for Icon Badge */
 .skill-item.tone-purple .skill-icon,
 .skill-item:nth-child(4n+1) .skill-icon {
+  background: #f3e8ff;
   color: #9333ea;
 }
-.skill-item.tone-purple:hover,
-.skill-item:nth-child(4n+1):hover {
-  background: linear-gradient(135deg, #ffffff 0%, #f3ebff 100%);
-  border-color: rgba(168, 85, 247, 0.4);
-  box-shadow: 0 8px 24px -4px rgba(168, 85, 247, 0.16);
-}
 
-/* Tone: Blue (Soft Sky / Azure Mist) */
-.skill-item.tone-blue,
-.skill-item:nth-child(4n+2) {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 55%, #ecf4fe 100%);
-  border: 1px solid rgba(59, 130, 246, 0.18);
-  box-shadow: 0 2px 10px -2px rgba(59, 130, 246, 0.05);
-}
 .skill-item.tone-blue .skill-icon,
 .skill-item:nth-child(4n+2) .skill-icon {
+  background: #dbeafe;
   color: #2563eb;
 }
-.skill-item.tone-blue:hover,
-.skill-item:nth-child(4n+2):hover {
-  background: linear-gradient(135deg, #ffffff 0%, #e6f1fe 100%);
-  border-color: rgba(59, 130, 246, 0.4);
-  box-shadow: 0 8px 24px -4px rgba(59, 130, 246, 0.16);
-}
 
-/* Tone: Emerald (Soft Mint / Sage Dew) */
-.skill-item.tone-emerald,
-.skill-item:nth-child(4n+3) {
-  background: linear-gradient(135deg, #ffffff 0%, #f7fdfb 55%, #ecfdf5 100%);
-  border: 1px solid rgba(16, 185, 129, 0.18);
-  box-shadow: 0 2px 10px -2px rgba(16, 185, 129, 0.05);
-}
 .skill-item.tone-emerald .skill-icon,
 .skill-item:nth-child(4n+3) .skill-icon {
+  background: #d1fae5;
   color: #059669;
 }
-.skill-item.tone-emerald:hover,
-.skill-item:nth-child(4n+3):hover {
-  background: linear-gradient(135deg, #ffffff 0%, #e3fced 100%);
-  border-color: rgba(16, 185, 129, 0.4);
-  box-shadow: 0 8px 24px -4px rgba(16, 185, 129, 0.16);
-}
 
-/* Tone: Amber (Soft Peach / Golden Honey) */
-.skill-item.tone-amber,
-.skill-item:nth-child(4n+4) {
-  background: linear-gradient(135deg, #ffffff 0%, #fffdf8 55%, #fff7eb 100%);
-  border: 1px solid rgba(245, 158, 11, 0.18);
-  box-shadow: 0 2px 10px -2px rgba(245, 158, 11, 0.05);
-}
 .skill-item.tone-amber .skill-icon,
 .skill-item:nth-child(4n+4) .skill-icon {
+  background: #fef3c7;
   color: #d97706;
-}
-.skill-item.tone-amber:hover,
-.skill-item:nth-child(4n+4):hover {
-  background: linear-gradient(135deg, #ffffff 0%, #fff0dc 100%);
-  border-color: rgba(245, 158, 11, 0.4);
-  box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.16);
 }
 
 /* Education & Certifications cards */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -2836,17 +2823,30 @@ button {
   margin-bottom: 6px;
 }
 
-.edu-year {
+.edu-date {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #0f172a;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.edu-desc {
   font-size: 12.5px;
   color: #64748b;
   line-height: 1.5;
+  margin-top: 6px;
   margin-top: auto;
 }
 
 /* ─── Contact Page ─────────────────────────────────────────────────────────── */
 .contact-page {
-  padding-top: calc(68px + 100px);
-  padding-bottom: 120px;
+  padding-top: calc(68px + 40px);
+  padding-bottom: 80px;
   width: var(--container-w);
   max-width: var(--max-w);
   margin: 0 auto;
@@ -4655,7 +4655,7 @@ button {
     height: auto;
     transform: none !important;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto -60px auto;
   }
 
   .about-speech-bubble {
@@ -4710,3 +4710,33 @@ button {
   }
 }
 
+/* ─── Global CTA Banner Section ─── */
+.cta-banner-section {
+  padding: 36px 0 36px 0;
+  width: var(--container-w);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.cta-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cta-banner-title {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.cta-banner-btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+}

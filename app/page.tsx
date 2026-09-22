@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import ProjectCard from '@/components/ProjectCard';
+import CtaSection from '@/components/CtaSection';
 import { PROJECTS } from '@/data/projects';
 
 export default function HomePage() {
@@ -25,6 +26,9 @@ export default function HomePage() {
           <ProjectCard key={project.slug} project={project} index={index} />
         ))}
       </section>
+
+      {/* ── CTA Banner ── */}
+      <CtaSection />
     </>
   );
 }

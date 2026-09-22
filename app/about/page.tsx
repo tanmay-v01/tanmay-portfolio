@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+import CtaSection from '@/components/CtaSection';
 
 export const metadata: Metadata = {
   title: 'About — Tanmay Vaity',
@@ -58,17 +59,20 @@ const EDUCATION = [
   {
     degree: 'Bachelor of Science (B.Sc.) in Computer Science & Interaction Design',
     school: 'University of Mumbai',
-    year: '2021 — 2024 • Focus on HCI, Systems Architecture & Usability Engineering',
+    date: '2021 — 2024',
+    desc: 'Focus on HCI, Systems Architecture & Usability Engineering',
   },
   {
     degree: 'Postgraduate Specialization in Human-Computer Interaction (HCI)',
-    school: 'Interaction Design Foundation (IxDF) & Design Lab',
-    year: '2023 — 2024 • Cognitive Ergonomics, Perceptual UI Psychology & Information Architecture',
+    school: 'IxDF & Design Lab',
+    date: '2023 — 2024',
+    desc: 'Cognitive Ergonomics, Perceptual UI Psychology & Information Architecture',
   },
   {
     degree: 'Foundational Sciences (PCMB & Applied IT)',
     school: 'Viva College of Science',
-    year: '2019 — 2021 • Mathematics, Computer Science & Applied Logic Systems',
+    date: '2019 — 2021',
+    desc: 'Mathematics, Computer Science & Applied Logic Systems',
   },
 ];
 
@@ -217,7 +221,8 @@ export default function AboutPage() {
                   <span className="edu-issuer-tag">{edu.school}</span>
                 </div>
                 <h3 className="edu-degree">{edu.degree}</h3>
-                <p className="edu-year">{edu.year}</p>
+                <span className="edu-date">{edu.date}</span>
+                <p className="edu-desc">{edu.desc}</p>
               </div>
             ))}
           </div>
@@ -240,15 +245,7 @@ export default function AboutPage() {
         </div>
 
         {/* CTA */}
-        <div className="about-section" style={{ textAlign: 'center' }}>
-          <p style={{ fontSize: '24px', fontWeight: 600, marginBottom: '16px', letterSpacing: '-0.02em' }}>
-            Want to work together?
-          </p>
-          <Link href="/contact" className="btn-primary" id="about-contact-cta">
-            Get In Touch →
-          </Link>
-        </div>
-
+        <CtaSection />
       </div>
     </div>
   );

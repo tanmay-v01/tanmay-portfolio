@@ -178,6 +178,6 @@ export const PERSONAL_INFO = {
   dob: '01 February 2005',
   languages: ['English', 'Hindi', 'Marathi'],
   interests: ['UI/UX Studies & Trends', 'Art & Vector Illustration', 'Football', 'Frontend Prototyping'],
-  linkedin: 'https://linkedin.com/in/tanmayvaity',
+  linkedin: 'https://www.linkedin.com/in/tanmay-vaity-544001265/',
   github: 'https://github.com/tanmayvaity'
 };

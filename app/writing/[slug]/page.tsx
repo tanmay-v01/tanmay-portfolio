@@ -51,7 +51,7 @@ export default async function ArticleReaderPage({ params }: PageProps) {
         <h3>Share &amp; Discuss</h3>
         <p>
           Have thoughts or questions on this topic? Reach out on{' '}
-          <a href="https://linkedin.com/in/tanmayvaity" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-purple)', fontWeight: 'bold' }}>
+          <a href="https://www.linkedin.com/in/tanmay-vaity-544001265/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-purple)', fontWeight: 'bold' }}>
             LinkedIn
           </a>{' '}
           or drop me an email at{' '}

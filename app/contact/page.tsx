@@ -1,21 +1,34 @@
 'use client';
 
 import type { Metadata } from 'next';
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useEffect, useState } from 'react';
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('sending');
-    // Replace with your actual form submission endpoint (Formspree, etc.)
-    try {
-      await new Promise((r) => setTimeout(r, 1000));
-      setStatus('sent');
-    } catch {
-      setStatus('error');
-    }
+    
+    const formData = new FormData(e.currentTarget);
+    const name = (formData.get('name') as string) || '';
+    const email = (formData.get('email') as string) || '';
+    const subject = (formData.get('subject') as string) || `Project Inquiry from ${name}`;
+    const message = (formData.get('message') as string) || '';
+
+    const mailtoSubject = encodeURIComponent(subject);
+    const mailtoBody = encodeURIComponent(
+      `Hi Tanmay,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`
+    );
+
+    // Open user's default email app pre-filled to tanmayvaity7@gmail.com
+    window.location.href = `mailto:tanmayvaity7@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+    
+    setStatus('sent');
   }
 
   return (
@@ -29,10 +42,13 @@ export default function ContactPage() {
       </p>
 
       {status === 'sent' ? (
-        <div style={{ padding: '32px', background: '#f5f5f5', borderRadius: '8px', maxWidth: '560px' }}>
-          <p style={{ fontSize: '20px', fontWeight: 600, marginBottom: '8px' }}>Message sent! ✓</p>
-          <p style={{ color: '#666' }}>
-            Thanks for reaching out — I&apos;ll get back to you within 24 hours.
+        <div style={{ padding: '32px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', maxWidth: '560px' }}>
+          <p style={{ fontSize: '20px', fontWeight: 700, marginBottom: '8px', color: '#0f172a' }}>
+            Message sent to tanmayvaity7@gmail.com ✓
+          </p>
+          <p style={{ color: '#475569', fontSize: '14.5px', lineHeight: '1.6' }}>
+            Thanks for reaching out! Opening your mail app to send to <strong>tanmayvaity7@gmail.com</strong>.
+            I&apos;ll get back to you within 24 hours.
           </p>
         </div>
       ) : (
@@ -131,12 +147,12 @@ export default function ContactPage() {
             LinkedIn
           </p>
           <a
-            href="https://linkedin.com/in/tanmayvaity"
+            href="https://www.linkedin.com/in/tanmay-vaity-544001265/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"
           >
-            linkedin.com/in/tanmayvaity
+            linkedin.com/in/tanmay-vaity-544001265
           </a>
         </div>
       </div>

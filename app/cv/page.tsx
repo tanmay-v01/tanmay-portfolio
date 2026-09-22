@@ -140,7 +140,7 @@ export default function CVPage() {
           <div>
             <span style={{ color: 'var(--text-dim)', marginRight: '6px' }}>LinkedIn:</span>
             <a href={PERSONAL_INFO.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-purple)', fontWeight: '600' }}>
-              linkedin.com/in/tanmayvaity
+              linkedin.com/in/tanmay-vaity-544001265
             </a>
           </div>
         </div>

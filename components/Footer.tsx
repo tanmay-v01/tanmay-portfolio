@@ -21,7 +21,7 @@ export default function Footer() {
         {/* Right: Social Links */}
         <div className="footer-social">
           <a
-            href="https://linkedin.com/in/tanmayvaity"
+            href="https://www.linkedin.com/in/tanmay-vaity-544001265/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn profile"
