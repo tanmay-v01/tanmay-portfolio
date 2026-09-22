@@ -1,3 +1,5 @@
+export type CaseStudy = any;
+
 export interface Project {
   slug: string;
   title: string;

@@ -35,7 +35,7 @@ export default function Colophon({ study }: ColophonProps) {
           <div style={{ marginBottom: '24px' }}>
             <dt style={{ fontSize: '12px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-dim)', marginBottom: '8px' }}>Project Collaborators</dt>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              {study.team.map((member) => (
+              {study.team.map((member: any) => (
                 <div key={member.name} style={{ fontSize: '13px', background: 'rgba(0,0,0,0.03)', padding: '6px 12px', borderRadius: '6px' }}>
                   <strong>{member.role}:</strong> {member.name}
                 </div>

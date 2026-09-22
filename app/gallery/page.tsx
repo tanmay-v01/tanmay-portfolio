@@ -79,12 +79,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
     category: 'Design Systems',
     client: 'Avaada Clean Energy',
     year: '2025',
-    desc: 'High-visibility industrial renewable energy platform and smart gate telemetry dashboard on iPad Pro and field mobile device, framed on architectural concrete and fluted emerald ridges.',
+    desc: 'High-visibility industrial renewable energy platform and smart gate telemetry dashboard on iPad Pro and field mobile device, framed on architectural concrete and deep royal blue fluted acoustic panels.',
     image: '/images/gallery/avaada_cleantech_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #064e3b 0%, #022c22 100%)',
-    accentColor: '#34d399',
-    badgeTone: 'emerald',
-    tags: ['Renewable Safety', 'Smart Gate IoT', 'Field Operative UX', '3D Studio']
+    bgGradient: 'linear-gradient(135deg, #0a2540 0%, #031326 100%)',
+    accentColor: '#38bdf8',
+    badgeTone: 'blue',
+    tags: ['CleanTech Blue UI', 'Smart Gate IoT', 'Field Operative UX', '3D Studio']
   },
   {
     id: 'pastel-fragrance-pos',
@@ -118,12 +118,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
     category: 'Mobile UX',
     client: 'Yo! Sports Media',
     year: '2025',
-    desc: 'Vibrant dual-screen sports tournament operations app featuring live bracket progression and interactive player court heatmaps on dynamic geometric neon pedestals.',
+    desc: 'Vibrant dual-screen sports tournament operations app featuring live bracket progression and interactive player court heatmaps on dynamic concrete plinth with emerald sports studio panels.',
     image: '/images/gallery/yo_sports_tournament_3d_mockup.png',
-    bgGradient: 'linear-gradient(135deg, #0c4a6e 0%, #082f49 100%)',
-    accentColor: '#38bdf8',
-    badgeTone: 'blue',
-    tags: ['Sports Ops', 'Player Analytics', 'Live Brackets', 'Neon Studio']
+    bgGradient: 'linear-gradient(135deg, #064e3b 0%, #022c22 100%)',
+    accentColor: '#34d399',
+    badgeTone: 'emerald',
+    tags: ['Sports Ops', 'Player Analytics', 'Live Brackets', 'Emerald Studio']
   }
 ];
 
