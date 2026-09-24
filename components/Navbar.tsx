@@ -9,7 +9,6 @@ const NAV_LINKS = [
   { href: '/', label: 'Work' },
   { href: '/about', label: 'About' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/cv', label: 'CV' },
   { href: '/contact', label: 'Contact' },
 ];
 

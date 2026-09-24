@@ -14,7 +14,6 @@ const NAV_ITEMS = [
   { label: 'Work', href: '/work', emoji: '✨' },
   { label: 'Writing', href: '/writing', emoji: '✏️' },
   { label: 'About', href: '/about', emoji: '💅🏼' },
-  { label: 'CV', href: '/cv', emoji: '📄' },
   { label: 'Press', href: '/press', emoji: '🎙️' },
 ];
 

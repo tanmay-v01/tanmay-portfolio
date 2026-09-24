@@ -2852,6 +2852,10 @@ button {
   margin: 0 auto;
 }
 
+.contact-header {
+  margin-bottom: 48px;
+}
+
 .contact-heading {
   font-size: clamp(32px, 5vw, 56px);
   font-weight: 700;
@@ -2865,14 +2869,83 @@ button {
   color: var(--color-muted);
   max-width: 500px;
   line-height: 1.7;
-  margin-bottom: 48px;
+  margin-bottom: 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 560px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact-direct-links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.contact-direct-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted, #999);
+  margin-bottom: 8px;
+}
+
+.contact-video-wrapper {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  position: sticky;
+  top: 100px;
+  margin-top: 0;
+}
+
+.contact-video-card {
+  width: 100%;
+  border-radius: 0;
+  overflow: visible;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.contact-video {
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-video-wrapper {
+    position: static;
+    max-width: 360px;
+    margin: 0 auto;
+  }
 }
 
 .form-group {
