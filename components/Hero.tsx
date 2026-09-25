@@ -45,8 +45,8 @@ export default function Hero() {
               View My Work ↓
             </Link>
             <a
-              href="/Tanmay_Vaity_Resume.pdf"
-              download
+              href="/Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
+              download="Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
               className="btn-ghost"
               id="hero-download-resume-btn"
             >

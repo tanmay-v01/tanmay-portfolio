@@ -35,7 +35,7 @@ export default function CVPage() {
           {/* Action Buttons */}
           <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', alignSelf: 'center' }}>
             <a
-              href="/Tanmay_Vaity_Resume.pdf"
+              href="/Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
               download="Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
               className="button primary"
               style={{

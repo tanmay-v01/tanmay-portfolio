@@ -160,8 +160,8 @@ export default function AboutPage() {
               {/* Action Buttons */}
               <div className="about-avatar-actions">
                 <a
-                  href="/Tanmay_Vaity_Resume.pdf"
-                  download
+                  href="/Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
+                  download="Tanmay_Vaity_UI_UX_Designer_Resume.pdf"
                   className="btn-primary about-resume-btn"
                   id="about-download-resume"
                 >
