@@ -1,0 +1,8 @@
+{
+  "id": "post_05_case_study_teardown",
+  "topic": "Case Study Spotlight: Redesigning Sports Analytics for High Velocity",
+  "post_type": "portfolio_case_study",
+  "scheduled_day": "Wednesday",
+  "hook": "How we reduced data lookup time by 40% in a complex live sports analytics mobile app:",
+  "content": "How we reduced data lookup time by 40% in a complex live sports analytics mobile app:\n\nWhen dealing with real-time match data, users need key metrics instantly \u2014 without digging through nested tabs while a game is live.\n\nThe UX Challenge:\nUsers were getting overwhelmed by dense statistical tables on small mobile screens, leading to high drop-offs during live events.\n\nOur UX Solutions:\n1. Contextual Bottom Sheets: Replaced full-page navigation transitions with swipeable bottom sheets for instant player stats.\n2. Sunlight-Optimized High Contrast: Engineered high-contrast color tokens specifically tested for outdoor sunlight viewing.\n3. Heatmap-Driven Navigation: Reduced top-level navigation from 6 items down to 3 core hubs based on live telemetry heatmaps.\n\nThe Result:\n\u2022 40% faster time-to-stat lookup\n\u2022 28% increase in session duration during live matches\n\nCheck out the full interactive case study link on my portfolio! \ud83d\ude80\n\n#CaseStudy #UXCaseStudy #ProductDesign #MobileApp #UserResearch #DesignMetrics"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "post_01_micro_fix",
+  "topic": "5 Visual Padding & Hierarchy Mistakes Most Designers Make",
+  "post_type": "carousel_visual",
+  "scheduled_day": "Monday",
+  "hook": "Most UI designs look 'amateur' not because of colors or fonts, but because of uneven spatial math.",
+  "content": "Most UI designs look 'amateur' not because of colors or fonts, but because of uneven spatial math.\n\nHere are 4 micro-rules I use on every screen to make layouts instantly look clean and senior-level:\n\n1. The 4pt / 8pt Grid Lock\nNever use 7px, 13px, or 23px margins. Stick strictly to 4, 8, 12, 16, 24, 32, 48px. Predictable spacing creates rhythm.\n\n2. Container Padding Rule (Internal < External)\nThe spacing INSIDE a button or card must ALWAYS be smaller than the space OUTSIDE it. When internal padding equals external gap, elements lose grouping context.\n\n3. Font Weight Contrast over Font Size\nInstead of making headlines huge (48px vs 16px), keep font sizes closer (24px vs 16px) and increase weight contrast (800 Bold vs 400 Regular).\n\n4. Optical Alignment > Math Alignment\nIcon badges, Play icons inside circles, and bullet points often need a 1-2px offset to LOOK centered, even when Figma says they are mathematically centered.\n\nSmall spatial details separate average UI from high-craft product design.\n\nWhich spacing rule do you find hardest to enforce across a design system? Let me know below! \ud83d\udc47\n\n#UIUX #ProductDesign #Figma #DesignSystems #UserInterface #WebDesign"
+}

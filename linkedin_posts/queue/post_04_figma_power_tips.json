@@ -1,0 +1,8 @@
+{
+  "id": "post_04_figma_power_tips",
+  "topic": "Figma Auto Layout & Component Architecture Hacks",
+  "post_type": "carousel_tactical",
+  "scheduled_day": "Monday",
+  "hook": "If your Figma file breaks every time text content changes, your component structure needs a reset.",
+  "content": "If your Figma file breaks every time text content changes, your component structure needs a reset.\n\nHere are 4 Figma auto-layout principles that save hours of refactoring:\n\n1. Use 'Fill Container' for Responsive Rows\nStop setting explicit pixel widths on text layers inside cards. Set the parent to Auto Layout and the child text layer to 'Fill Container'.\n\n2. Min and Max Dimensions on Cards\nCombine Auto Layout with Min-Width (e.g. 280px) and Max-Width (e.g. 480px) so your components adapt seamlessly across desktop, tablet, and mobile frames.\n\n3. Absolute Positioning for Badges & Close Buttons\nDon't create complex nested frames just to place a notification dot on an icon. Use Absolute Position (Shift + A override) inside the component.\n\n4. Slot Components for Modals & Cards\nInstead of building 50 variants of a modal, build ONE modal shell component with a flexible 'Slot' instance inside it.\n\nClean Figma component architecture = faster handoffs + zero engineering confusion.\n\nWhat's your favorite Figma shortcut or feature this year?\n\n#Figma #DesignSystems #UIDesign #UXTools #ProductDesign"
+}

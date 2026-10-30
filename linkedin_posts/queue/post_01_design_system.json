@@ -1,0 +1,7 @@
+{
+  "id": "post_01_design_system",
+  "topic": "Scaling Design Systems for Enterprise Apps",
+  "content": "\ud83c\udfa8 Design Systems aren't just component libraries \u2014 they are products built for developers and designers.\n\nWhen building scalable UI systems, here are 3 rules I follow:\n\n1. Tokenize Everything: Color, typography, spacing, and elevation should be semantic tokens, not hardcoded hex values.\n2. Document the 'Why', not just the 'What': A button component is useless if your team doesn't know when to use Primary vs. Secondary actions.\n3. Measure Adoption: Track component usage across code repositories to find friction points early.\n\nWhat's your biggest challenge when scaling a design system? Let me know below! \ud83d\udc47\n\n#UIUX #DesignSystems #ProductDesign #UserExperience #Figma #Frontend",
+  "post_type": "carousel_or_text",
+  "scheduled_for": "Monday"
+}

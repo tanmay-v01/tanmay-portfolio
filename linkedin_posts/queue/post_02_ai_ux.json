@@ -1,0 +1,7 @@
+{
+  "id": "post_02_ai_ux",
+  "topic": "Designing Intuitive Interfaces for AI Workflows",
+  "content": "\ud83e\udd16 Designing UI for AI models requires a fundamental shift from traditional deterministic UX.\n\nIn deterministic software: Input A always produces Output B.\nIn Generative AI software: Input A produces probabilistic Output B, C, or D.\n\nHere's how we design for trust in AI interfaces:\n1. Provide Instant Editing & Fine-tuning controls right in context.\n2. Show Model Confidence & Reasoning where appropriate.\n3. Make Undo & Regeneration seamless.\n\nAs AI integrates deeper into enterprise software, UX designers must champion clarity over complexity.\n\nHow are you approaching AI UX in your products?\n\n#AIUX #UXDesign #ProductDesign #GenerativeAI #UserResearch",
+  "post_type": "text",
+  "scheduled_for": "Wednesday"
+}

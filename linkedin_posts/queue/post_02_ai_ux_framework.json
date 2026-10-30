@@ -1,0 +1,8 @@
+{
+  "id": "post_02_ai_ux_framework",
+  "topic": "The 3 Non-Negotiable UX Principles for AI Products in 2026",
+  "post_type": "text_thought_leadership",
+  "scheduled_day": "Wednesday",
+  "hook": "Designing for AI is completely different from traditional software. Traditional UI is deterministic. AI UI is probabilistic.",
+  "content": "Designing for AI is completely different from traditional software.\n\nIn traditional SaaS: Input A ALWAYS equals Output B.\nIn AI Software: Input A produces Output B with 85% probability, Output C with 10%, and a hallucination 5% of the time.\n\nIf your UX doesn't design for uncertainty, your users will lose trust instantly.\n\nHere are 3 non-negotiable UX patterns for AI interfaces:\n\n1. Inline Verification & Editing\nDon't make users read an entire AI response to copy-paste it elsewhere. Give them inline inline-edits, inline regens, and 1-click apply actions right where the output lands.\n\n2. Confidence & Source Transparency\nIf an AI agent summarizes a 50-page document or generates financial insights, ALWAYS provide hoverable source citations and confidence indicators.\n\n3. Granular Undo & Branching\nWhen AI generates a draft or code block, users need to branch off alternative versions easily without losing their prompt context.\n\nThe best AI products don't replace human decision-making \u2014 they amplify human velocity.\n\nWhat's the best AI UX pattern you've seen recently?\n\n#AIUX #ProductDesign #GenerativeAI #UserExperience #SaaS #DesignThinking"
+}

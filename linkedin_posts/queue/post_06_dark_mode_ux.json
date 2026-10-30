@@ -1,0 +1,8 @@
+{
+  "id": "post_06_dark_mode_ux",
+  "topic": "The Golden Rules of Dark Mode Design (Stop Using Pure Black #000000)",
+  "post_type": "visual_micro_tip",
+  "scheduled_day": "Friday",
+  "hook": "Stop using pure black (#000000) for Dark Mode backgrounds. Here is why:",
+  "content": "Stop using pure black (#000000) for Dark Mode backgrounds.\n\nPure black backgrounds create harsh visual contrast against white text, causing eye strain and halogen halation artifacts on OLED screens.\n\nHere are 4 dark mode principles every product designer should follow:\n\n1. Use Dark Slate / Charcoal for Base Backgrounds\nUse `#0A0D12` or `#121212` as your base canvas. Dark gray allows you to express depth and elevation using lighter gray surface layers.\n\n2. Communicate Elevation with Surface Lightness, NOT Shadows\nShadows are invisible on dark backgrounds. To show a card or modal elevation, make its background slightly lighter gray (e.g. Base: `#121212` -> Card: `#1E1E1E` -> Modal: `#2C2C2C`).\n\n3. Desaturate Accent Colors\nVibrant primary colors (like `#0055FF`) look great on white light mode, but vibrate aggressively on dark backgrounds. Lower color saturation by 10-15% for dark mode tokens.\n\n4. Reduce Text White Opacity\nInstead of `#FFFFFF` for body text, use `#FFFFFF` with 87% opacity (or `#E1E1E1`). It maintains high contrast while eliminating glare.\n\nGreat dark mode feels premium, effortless, and easy on the eyes.\n\nDoes your product have a dedicated Dark Mode palette?\n\n#UIUX #DarkMode #DesignTokens #VisualDesign #ColorTheory #Figma"
+}
